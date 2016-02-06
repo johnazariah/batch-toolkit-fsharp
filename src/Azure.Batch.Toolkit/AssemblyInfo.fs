@@ -1,9 +1,9 @@
 ﻿namespace System
 open System.Reflection
 
-[<assembly: AssemblyTitleAttribute("FSharp.ProjectTemplate")>]
-[<assembly: AssemblyProductAttribute("FSharp.ProjectTemplate")>]
-[<assembly: AssemblyDescriptionAttribute("A short summary of your project.")>]
+[<assembly: AssemblyTitleAttribute("Azure.Batch.Toolkit")>]
+[<assembly: AssemblyProductAttribute("Azure.Batch.Toolkit")>]
+[<assembly: AssemblyDescriptionAttribute("A toolkit to simplify interacting with Azure Batch Services")>]
 [<assembly: AssemblyVersionAttribute("1.0")>]
 [<assembly: AssemblyFileVersionAttribute("1.0")>]
 do ()

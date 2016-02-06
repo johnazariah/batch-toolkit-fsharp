@@ -1,6 +1,6 @@
-﻿module FSharp.ProjectScaffold.Tests
+module Azure.Batch.Toolkit.Tests
 
-open FSharp.ProjectTemplate
+open Azure.Batch.Toolkit
 open NUnit.Framework
 
 [<Test>]

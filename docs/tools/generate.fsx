@@ -11,17 +11,17 @@
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
 // Web site location for the generated documentation
-let website = "/##ProjectName##"
+let website = "/Azure.Batch.Toolkit"
 
-let githubLink = "http://github.com/##GitHome##/##GitName##"
+let githubLink = "http://github.com/johnazariah/Azure.Batch.Toolkit"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "##ProjectName##"
-    "project-author", "##Author##"
-    "project-summary", "##Summary##"
+  [ "project-name", "Azure.Batch.Toolkit"
+    "project-author", "John Azariah"
+    "project-summary", "A toolkit to simplify interacting with Azure Batch Services"
     "project-github", githubLink
-    "project-nuget", "http://nuget.org/packages/##ProjectName##" ]
+    "project-nuget", "http://nuget.org/packages/Azure.Batch.Toolkit" ]
 
 // --------------------------------------------------------------------------------------
 // For typical project, no changes are needed below
