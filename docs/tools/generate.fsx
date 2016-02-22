@@ -11,9 +11,9 @@
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
 // Web site location for the generated documentation
-let website = "/Azure.Batch.Toolkit"
+let website = "/batch-toolkit"
 
-let githubLink = "http://github.com/johnazariah/Azure.Batch.Toolkit"
+let githubLink = "http://github.com/johnazariah/batch-toolkit"
 
 // Specify more information about your project
 let info =
@@ -27,8 +27,8 @@ let info =
 // For typical project, no changes are needed below
 // --------------------------------------------------------------------------------------
 
-#load "../../packages/build/FSharp.Formatting/FSharp.Formatting.fsx"
-#I "../../packages/build/FAKE/tools/"
+#load "../../packages/FSharp.Formatting/FSharp.Formatting.fsx"
+#I "../../packages/FAKE/tools/"
 #r "FakeLib.dll"
 open Fake
 open System.IO
@@ -50,7 +50,7 @@ let content    = __SOURCE_DIRECTORY__ @@ "../content"
 let output     = __SOURCE_DIRECTORY__ @@ "../output"
 let files      = __SOURCE_DIRECTORY__ @@ "../files"
 let templates  = __SOURCE_DIRECTORY__ @@ "templates"
-let formatting = __SOURCE_DIRECTORY__ @@ "../../packages/build/FSharp.Formatting/"
+let formatting = __SOURCE_DIRECTORY__ @@ "../../packages/FSharp.Formatting/"
 let docTemplate = "docpage.cshtml"
 
 // Where to look for *.csproj templates (in this order)

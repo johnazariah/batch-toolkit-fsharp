@@ -1,3 +1,6 @@
-group Test
 NUnit
 NUnit.Runners
+Azure.Batch
+FSharpx.Core
+FSharp.Data
+FsUnit

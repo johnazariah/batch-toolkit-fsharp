@@ -1,8 +1,2 @@
-// Learn more about F# at http://fsharp.org. See the 'F# Tutorial' project
-// for more guidance on F# programming.
-
-#load "Library.fs"
-open Azure.Batch.Toolkit
-
-let num = Library.hello 42
-printfn "%i" num
+#r @"..\..\packages\FSharp.Data\lib\net40\FSharp.Data.dll"
+open FSharp.Data

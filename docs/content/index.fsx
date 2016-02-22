@@ -59,9 +59,9 @@ The library is available under Public Domain license, which allows modification 
 redistribution for both commercial and non-commercial purposes. For more information see the 
 [License file][license] in the GitHub repository. 
 
-  [content]: https://github.com/fsprojects/Azure.Batch.Toolkit/tree/master/docs/content
-  [gh]: https://github.com/fsprojects/Azure.Batch.Toolkit
-  [issues]: https://github.com/fsprojects/Azure.Batch.Toolkit/issues
-  [readme]: https://github.com/fsprojects/Azure.Batch.Toolkit/blob/master/README.md
-  [license]: https://github.com/fsprojects/Azure.Batch.Toolkit/blob/master/LICENSE.txt
+  [content]: https://github.com/johnazariah/batch-toolkit/tree/master/docs/content
+  [gh]: https://github.com/johnazariah/batch-toolkit
+  [issues]: https://github.com/johnazariah/batch-toolkit/issues
+  [readme]: https://github.com/johnazariah/batch-toolkit/blob/master/README.md
+  [license]: https://github.com/johnazariah/batch-toolkit/blob/master/LICENSE.txt
 *)

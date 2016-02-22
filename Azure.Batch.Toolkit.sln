@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B98-5CED-492C-A5B7-A5B4F73CF142}"
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
@@ -9,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Azure.Batch.Toolkit", "src\Azure.Batch.Toolkit\Azure.Batch.Toolkit.fsproj", "{C73386A9-9D16-4FB6-9E81-C7746113E62B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Azure.Batch.Toolkit", "src\Azure.Batch.Toolkit\Azure.Batch.Toolkit.fsproj", "{7D576E35-0EE6-49E6-8CF9-D9A5B0EE62B7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{BF60BC93-E09B-4E5F-9D85-95A519479D54}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,7 +33,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{8E6D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD-2B06-4030-9F0F-DC548F98E1C4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Azure.Batch.Toolkit.Tests", "tests\Azure.Batch.Toolkit.Tests\Azure.Batch.Toolkit.Tests.fsproj", "{74B290DA-7A2B-4B19-B75D-28A662214413}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Azure.Batch.Toolkit.Tests", "tests\Azure.Batch.Toolkit.Tests\Azure.Batch.Toolkit.Tests.fsproj", "{22009A25-16E9-4268-A8C4-526269BCDE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Batch.Toolkit.CSharp.Tests", "tests\Azure.Batch.Toolkit.CSharp.Tests\Azure.Batch.Toolkit.CSharp.Tests.csproj", "{4285C293-B70D-4AB3-A861-389CCF6CEF14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,14 +43,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C73386A9-9D16-4FB6-9E81-C7746113E62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C73386A9-9D16-4FB6-9E81-C7746113E62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C73386A9-9D16-4FB6-9E81-C7746113E62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C73386A9-9D16-4FB6-9E81-C7746113E62B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74B290DA-7A2B-4B19-B75D-28A662214413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74B290DA-7A2B-4B19-B75D-28A662214413}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74B290DA-7A2B-4B19-B75D-28A662214413}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74B290DA-7A2B-4B19-B75D-28A662214413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D576E35-0EE6-49E6-8CF9-D9A5B0EE62B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D576E35-0EE6-49E6-8CF9-D9A5B0EE62B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D576E35-0EE6-49E6-8CF9-D9A5B0EE62B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D576E35-0EE6-49E6-8CF9-D9A5B0EE62B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22009A25-16E9-4268-A8C4-526269BCDE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22009A25-16E9-4268-A8C4-526269BCDE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22009A25-16E9-4268-A8C4-526269BCDE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22009A25-16E9-4268-A8C4-526269BCDE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4285C293-B70D-4AB3-A861-389CCF6CEF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4285C293-B70D-4AB3-A861-389CCF6CEF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4285C293-B70D-4AB3-A861-389CCF6CEF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4285C293-B70D-4AB3-A861-389CCF6CEF14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +62,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{83F16175-43B1-4C90-A1EE-8E351C33435D} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
 		{8E6D5255-776D-4B61-85F9-73C37AA1FB9A} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
-		{74B290DA-7A2B-4B19-B75D-28A662214413} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{22009A25-16E9-4268-A8C4-526269BCDE56} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{4285C293-B70D-4AB3-A861-389CCF6CEF14} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
 	EndGlobalSection
 EndGlobal

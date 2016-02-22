@@ -1,33 +1,65 @@
-
-
-GROUP Build
 NUGET
   remote: https://www.nuget.org/api/v2
   specs:
+    Azure.Batch (3.0.0)
+      Hyak.Common (>= 1.0.2) - framework: >= net45
+      Microsoft.Azure.Common (>= 2.1.0) - framework: >= net45
+      Microsoft.Data.OData (>= 5.6.2) - framework: >= net45
+      WindowsAzure.Storage (>= 4.3.0) - framework: >= net45
     FAKE (4.20.0)
-    FSharp.Compiler.Service (2.0.0.4)
+    FSharp.Compiler.Service (2.0.0.5)
+    FSharp.Core (4.0.0.1)
+    FSharp.Data (2.2.5)
+      Zlib.Portable (>= 1.10.0) - framework: portable-net40+sl50+wp80+win80
     FSharp.Formatting (2.14.0)
       FSharp.Compiler.Service (>= 2.0.0.3 < 2.1.0)
       FSharpVSPowerTools.Core (>= 2.3.0 < 2.4.0)
     FSharpVSPowerTools.Core (2.3.0)
       FSharp.Compiler.Service (>= 2.0.0.3)
+    FSharpx.Core (1.8.41) - redirects: force
+    FsUnit (1.4.1)
+      FSharp.Core (>= 3.1.2.5)
+      NUnit (2.6.4)
+    Hyak.Common (1.1.0) - framework: >= net45
+    Microsoft.Azure.Common (2.1.0) - framework: >= net45
+      Hyak.Common (>= 1.0.2)
+      Microsoft.Azure.Common.Dependencies (>= 1.0.0)
+    Microsoft.Azure.Common.Dependencies (1.0.0) - framework: >= net45
+      Microsoft.Bcl (>= 1.1.9) - framework: >= net40, portable-net45+wp80+wpa81+win
+      Microsoft.Bcl.Async (>= 1.0.168) - framework: >= net40, portable-net45+wp80+wpa81+win
+      Microsoft.Bcl.Build (>= 1.0.14) - framework: >= net40, portable-net45+wp80+wpa81+win
+      Microsoft.Net.Http (>= 2.2.22) - framework: >= net40, portable-net45+wp80+wpa81+win
+      Newtonsoft.Json (>= 6.0.4) - framework: >= net40, portable-net45+wp80+wpa81+win
+    Microsoft.Azure.KeyVault.Core (1.0.0) - framework: >= net45
     Microsoft.Bcl (1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
+    Microsoft.Bcl.Async (1.0.168) - framework: >= net45
+      Microsoft.Bcl (>= 1.1.8)
     Microsoft.Bcl.Build (1.0.21) - import_targets: false
+    Microsoft.Data.Edm (5.7.0) - framework: >= net45
+    Microsoft.Data.OData (5.7.0) - framework: >= net45
+      Microsoft.Data.Edm (5.7.0)
+      System.Spatial (5.7.0)
+    Microsoft.Data.Services.Client (5.7.0) - framework: >= net45
+      Microsoft.Data.OData (5.7.0)
     Microsoft.Net.Http (2.2.29)
       Microsoft.Bcl (>= 1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
+    Newtonsoft.Json (8.0.2) - redirects: force
+    NUnit (2.6.4)
+    NUnit.Runners (2.6.4)
     Octokit (0.18.0)
       Microsoft.Net.Http
     SourceLink.Fake (1.1.0)
+    System.Spatial (5.7.0) - framework: >= net45
+    WindowsAzure.Storage (6.2.0) - framework: >= net45
+      Microsoft.Azure.KeyVault.Core (>= 1.0.0) - framework: >= net40, wpv8.0
+      Microsoft.Data.OData (>= 5.6.4) - framework: >= net40, winv4.5, wpv8.0
+      Microsoft.Data.Services.Client (>= 5.6.4) - framework: >= net40
+      Newtonsoft.Json (>= 6.0.8) - framework: >= net40, winv4.5, wpv8.0
+    Zlib.Portable (1.11.0) - framework: portable-net40+sl50+wp80+win80
 GITHUB
   remote: fsharp/FAKE
   specs:
     modules/Octokit/Octokit.fsx (43c4800c5f132d2c2d6832a3a59232a64d83d4c0)
       Octokit
-GROUP Test
-NUGET
-  remote: https://www.nuget.org/api/v2
-  specs:
-    NUnit (2.6.4)
-    NUnit.Runners (2.6.4)

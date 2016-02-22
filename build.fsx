@@ -2,7 +2,7 @@
 // FAKE build script
 // --------------------------------------------------------------------------------------
 
-#r @"packages/build/FAKE/tools/FakeLib.dll"
+#r @"packages/FAKE/tools/FakeLib.dll"
 open Fake
 open Fake.Git
 open Fake.AssemblyInfoFile
@@ -12,7 +12,7 @@ open System
 open System.IO
 #if MONO
 #else
-#load "packages/build/SourceLink.Fake/tools/Fake.fsx"
+#load "packages/SourceLink.Fake/tools/Fake.fsx"
 open SourceLink
 #endif
 
@@ -28,7 +28,7 @@ open SourceLink
 
 // The name of the project
 // (used by attributes in AssemblyInfo, name of a NuGet package and directory in 'src')
-let project = "Azure.Batch.Toolkit"
+let project = "Batch.Toolkit"
 
 // Short summary of the project
 // (used as description in AssemblyInfo and as a short summary for NuGet package)
@@ -56,7 +56,7 @@ let gitOwner = "johnazariah"
 let gitHome = "https://github.com/" + gitOwner
 
 // The name of the project on GitHub
-let gitName = "Azure.Batch.Toolkit"
+let gitName = "batch-toolkit"
 
 // The url for the raw files hosted
 let gitRaw = environVarOrDefault "gitRaw" "https://raw.github.com/johnazariah"
@@ -191,7 +191,7 @@ Target "PublishNuget" (fun _ ->
 // Generate the documentation
 
 
-let fakePath = "packages" </> "build" </> "FAKE" </> "tools" </> "FAKE.exe"
+let fakePath = "packages" </> "FAKE" </> "tools" </> "FAKE.exe"
 let fakeStartInfo script workingDirectory args fsiargs environmentVars =
     (fun (info: System.Diagnostics.ProcessStartInfo) ->
         info.FileName <- System.IO.Path.GetFullPath fakePath
@@ -223,7 +223,8 @@ let buildDocumentationTarget fsiargs target =
     ()
 
 Target "GenerateReferenceDocs" (fun _ ->
-    buildDocumentationTarget "-d:RELEASE -d:REFERENCE" "Default"
+    ()
+    //buildDocumentationTarget "-d:RELEASE -d:REFERENCE" "Default"
 )
 
 let generateHelp' fail debug =
@@ -332,7 +333,7 @@ Target "ReleaseDocs" (fun _ ->
     Branches.push tempDocsDir
 )
 
-#load "paket-files/build/fsharp/FAKE/modules/Octokit/Octokit.fsx"
+#load "paket-files/fsharp/FAKE/modules/Octokit/Octokit.fsx"
 open Octokit
 
 Target "Release" (fun _ ->

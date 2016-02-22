@@ -1,0 +1,6 @@
+NUnit
+NUnit.Runners
+Azure.Batch
+FSharp.Core redirects: force
+FSharpx.Core
+Newtonsoft.Json redirects: force
