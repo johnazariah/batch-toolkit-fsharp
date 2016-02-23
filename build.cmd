@@ -12,7 +12,9 @@ if errorlevel 1 (
 )
 
 IF NOT EXIST build.fsx (
+  echo "Initializing..."
   .paket\paket.exe update
-  packages\build\FAKE\tools\FAKE.exe init.fsx
+  packages\FAKE\tools\FAKE.exe init.fsx
 )
-packages\build\FAKE\tools\FAKE.exe build.fsx %*
+
+packages\FAKE\tools\FAKE.exe build.fsx %*

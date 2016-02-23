@@ -1,0 +1,23 @@
+type project
+owners
+    John Azariah
+authors 
+    John Azariah
+projectUrl
+    http://github.com/johnazariah/Azure.Batch.Toolkit
+iconUrl
+    https://raw.githubusercontent.com/johnazariah/Azure.Batch.Toolkit/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/johnazariah/Azure.Batch.Toolkit/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    Azure Batch FSharp CSharp
+summary
+    A toolkit to simplify interacting with Azure Batch Services
+description
+    A toolkit to simplify interacting with Azure Batch Services
+
+

@@ -1,16 +1,15 @@
 source https://nuget.org/api/v2
-
-group Build
-  source https://nuget.org/api/v2
+    nuget Azure.Batch
+    nuget FSharp.Data
+    nuget FSharp.Formatting
+    nuget FSharpx.Core  redirects:force
+    nuget FsUnit
+    nuget newtonsoft.json redirects:force
   
-  nuget SourceLink.Fake
-  nuget FAKE
-  nuget FSharp.Formatting
+    nuget SourceLink.Fake
+    nuget FAKE
+    nuget FSharp.Formatting
+    nuget NUnit ~> 2
+    nuget NUnit.Runners ~> 2
 
-  github fsharp/FAKE modules/Octokit/Octokit.fsx
-
-group Test
-  source https://nuget.org/api/v2
-  
-  nuget NUnit ~> 2
-  nuget NUnit.Runners ~> 2
+    github fsharp/FAKE modules/Octokit/Octokit.fsx
